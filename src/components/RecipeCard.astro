@@ -1,0 +1,55 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  recipe: CollectionEntry<"recipes">;
+}
+
+const { recipe } = Astro.props;
+const { title, description, method, cuisine, date, tags } = recipe.data;
+
+const dateLabel = date.toLocaleDateString("en-GB", {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+});
+
+const allTags = [cuisine, ...tags].filter(Boolean).slice(0, 4);
+---
+
+<a
+  href={`/recipes/${recipe.id}/`}
+  class="group block border-2 border-ink bg-paper-shade transition-colors duration-100 hover:bg-paprika hover:text-paper"
+>
+  <article class="flex flex-col h-full">
+    <div
+      class="flex items-center justify-between gap-2 border-b-2 border-ink px-5 py-3"
+    >
+      <span class="text-xs font-light uppercase tracking-widest">
+        {method ?? "kitchen"}
+      </span>
+      <span class="text-xs font-light">{dateLabel}</span>
+    </div>
+    <div class="flex-1 px-5 py-8 flex flex-col gap-4">
+      <h2 class="font-serif text-4xl leading-[0.95] tracking-tight">
+        {title}
+      </h2>
+      {
+        description && (
+          <p class="text-sm font-light leading-relaxed text-ink-soft group-hover:text-paper/80">
+            {description}
+          </p>
+        )
+      }
+    </div>
+    <div class="flex flex-wrap gap-2 border-t-2 border-ink px-5 py-3">
+      {
+        allTags.map((tag) => (
+          <span class="border border-current px-2 py-0.5 text-[10px] font-light uppercase tracking-widest">
+            {tag}
+          </span>
+        ))
+      }
+    </div>
+  </article>
+</a>

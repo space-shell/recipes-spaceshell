@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Variable font: single import bundles the full weight range */
+@import "@fontsource-variable/geist";
+/* Non-variable display serif */
+@import "@fontsource/instrument-serif";
+
+/*
+  Warm brutalist design system.
+  Cream paper, deep ink, paprika accent. Hard edges, consistent gaps,
+  type that plays on size ratios for that brutalist grandeur.
+*/
+@theme {
+  /* --- Palette: warm paper + ink + paprika --- */
+  --color-paper: #f3ede2;        /* page background, warm cream */
+  --color-paper-shade: #e9e1d1;  /* secondary surface */
+  --color-ink: #1a1714;          /* primary text / borders */
+  --color-ink-soft: #4a4239;     /* secondary text */
+  --color-clay: #8a7c6b;         /* muted dividers / labels */
+  --color-paprika: #b8431f;      /* primary accent */
+  --color-paprika-deep: #8a2f12; /* hover / emphasis */
+  --color-ochre: #b48327;        /* secondary accent */
+
+  /* --- Typography --- */
+  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+
+  /* --- Spacing scale (8px base rhythm) --- */
+  --spacing-gutter: 2rem;   /* 32px — block gutters */
+  --spacing-block: 4rem;    /* 64px — section separation */
+
+  /* --- Brutalist hairline borders --- */
+  --border-hair: 1px;
+  --border-rule: 2px;
+}
