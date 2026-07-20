@@ -69,32 +69,49 @@ Defined in `src/styles/global.css` via Tailwind v4's `@theme` block:
 
 ## Deploying to Cloudflare Pages (recipes.spaceshell.xyz)
 
-This project is wired for **Git integration** — push to GitHub and CF Pages
-auto-builds on every commit.
+Deploys use the **wrangler CLI** (direct upload), with GitHub as the source
+of truth. This gives you manual control over when a deploy goes out —
+there is no auto-build on push.
 
-### One-time setup
+- **Project:** `recipes-spaceshell` (production branch: `main`)
+- **Live:** https://recipes-spaceshell.pages.dev/
+- **Custom domain:** https://recipes.spaceshell.xyz/
+- **Repo:** https://github.com/space-shell/recipes-spaceshell
 
-1. **Push to GitHub** — create a repo (e.g. `recipes`) and push:
-   ```sh
-   git remote add origin git@github.com:<you>/recipes.git
-   git push -u origin main
-   ```
-2. **Create the Pages project** — in the Cloudflare dashboard:
-   - **Workers & Pages → Create → Pages → Connect to Git**
-   - Select the `recipes` repo
-   - Build settings:
-     - **Framework preset:** `Astro`
-     - **Build command:** `npm run build`
-     - **Build output directory:** `dist`
-     - **Environment variable:** `NODE_VERSION` = `22`
-3. **Custom domain** — under the Pages project → **Custom domains → Set up a
-   custom domain** → `recipes.spaceshell.xyz`. If `spaceshell.xyz` is already
-   on this Cloudflare account, the DNS CNAME is provisioned automatically.
+### One-time setup (already done)
+
+```sh
+# GitHub
+gh repo create recipes-spaceshell --public --source=. --remote=origin
+git push -u origin main
+
+# Cloudflare Pages
+bunx wrangler pages project create recipes-spaceshell --production-branch main
+bunx wrangler pages deploy dist --branch main
+```
+
+Custom domain (`recipes.spaceshell.xyz`) and DNS CNAME are attached to the
+Pages project; `spaceshell.xyz` is a Cloudflare-managed zone.
 
 ### Subsequent deploys
 
-Push to `main` → Cloudflare builds and deploys. Preview branches get their
-own preview URLs.
+```sh
+npm run build
+bunx wrangler pages deploy dist --branch main --commit-message "..."
+```
+
+Git push and Pages deploy are intentionally separate — push to GitHub to
+save the code, then deploy when you want it live. Preview deployments use
+`--branch preview-name`.
+
+### Switching to Git integration (optional)
+
+If you'd prefer auto-build on push instead, in the Cloudflare dashboard go
+to **Workers & Pages → recipes-spaceshell → Settings → Builds & deployments**
+and connect the GitHub repo with:
+- **Build command:** `npm run build`
+- **Build output directory:** `dist`
+- **Environment variable:** `NODE_VERSION` = `22`
 
 ## Project structure
 
