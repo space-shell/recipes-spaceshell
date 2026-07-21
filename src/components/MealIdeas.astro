@@ -1,0 +1,39 @@
+---
+interface Meal {
+  name: string;
+  description: string;
+}
+
+interface Category {
+  category: string;
+  meals: Meal[];
+}
+
+interface Props {
+  categories: Category[];
+}
+
+const { categories } = Astro.props;
+---
+
+<section>
+  {categories.map((cat) => (
+    <div class="border-t-2 border-ink first:border-t-0">
+      <h3 class="font-serif text-2xl px-5 py-4 bg-paper-shade border-b-2 border-ink tracking-tight">
+        {cat.category}
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-ink">
+        {cat.meals.map((meal) => (
+          <div class="p-5 flex flex-col gap-1.5">
+            <span class="font-serif text-lg leading-none text-ink">
+              {meal.name}
+            </span>
+            <span class="text-sm font-light leading-relaxed text-ink-soft">
+              {meal.description}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  ))}
+</section>

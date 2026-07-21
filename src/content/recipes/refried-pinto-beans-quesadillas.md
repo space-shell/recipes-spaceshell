@@ -37,6 +37,65 @@ notes:
   - The garam masala + sesame oil gives the beans a warm, almost Indian depth that's totally unique. Don't skip it.
   - Swedish cheese substitute for Oaxaca — gräddost is the secret weapon. A blend of 50% gräddost + 30% Gouda + 20% mild herrgårdsost is even closer to restaurant quality.
   - Vacuum-seal portions (chamber vacuum, cooled) and freeze for 12–18 months. Flatten the bags into ~1-inch layers for fast thawing.
+mealIdeas:
+  - category: Breakfast
+    meals:
+      - name: Huevos Rancheros
+        description: Fried eggs on a warm corn tortilla, smothered in refried beans, salsa, and queso.
+      - name: Breakfast Burrito
+        description: Scrambled eggs + refried beans + cheese + salsa in a large flour tortilla. Wrap and go.
+      - name: Bean Tostada
+        description: Crisp fried tortilla, layer of refried beans, fried egg on top, crumbled queso fresco, hot sauce.
+      - name: Shakshuka-Style Beans
+        description: Poach eggs directly in a pan of spiced refried beans thinned with broth or tomato sauce. Serve with crusty bread.
+  - category: Lunch & Light Meals
+    meals:
+      - name: Bean & Cheese Burrito
+        description: The OG. Refried beans + rice + cheese + hot sauce. Simple, filling, perfect.
+      - name: Tostada Tower
+        description: Layer crispy tortillas with beans, shredded lettuce, diced tomato, avocado, sour cream, and cotija.
+      - name: 7-Layer Dip
+        description: Refried beans on the bottom, then guacamole, sour cream, salsa, shredded cheese, olives, green onions. Serve with tortilla chips.
+      - name: Bean Torta
+        description: Bolillo roll, spread of refried beans, sliced avocado, pickled jalapeños, queso, maybe some carnitas. Pressed and griddled.
+  - category: Dinner
+    meals:
+      - name: Burrito Bowl
+        description: Layer of refried beans at the bottom, then cilantro-lime rice, grilled chicken or steak, pico de gallo, guacamole, cheese.
+      - name: Enchiladas
+        description: Fill corn tortillas with refried beans + cheese, roll, cover in enchilada sauce and more cheese, bake until bubbly.
+      - name: Chilaquiles
+        description: Fried tortilla chips simmered in salsa, topped with refried beans, pulled chicken, crema, queso, and a fried egg.
+      - name: Nachos Supreme
+        description: Tortilla chips layered with refried beans, melted cheese, jalapeños, sour cream, guac, and pico.
+      - name: Beans & Rice Plates
+        description: Refried beans + Spanish rice + warm tortillas. The Mexican comfort-food trinity.
+  - category: Sides & Snacks
+    meals:
+      - name: Dip for Chips
+        description: Thin the refried beans slightly with broth or water, warm with cheese, serve as a dip.
+      - name: Bean Tacos
+        description: Soft corn tortillas, refried beans, diced onion, cilantro, squeeze of lime. Simple and honest.
+      - name: Empanadas
+        description: Fill pastry dough with refried beans + cheese, fry or bake. Great party food.
+      - name: Loaded Baked Potato
+        description: Split a baked potato, top with refried beans, cheese, sour cream, chives, bacon bits.
+  - category: Creative & Fusion
+    meals:
+      - name: Bean Burger Patties
+        description: Mix refried beans with breadcrumbs, egg, and spices, form patties, pan-fry. Surprisingly good texture.
+      - name: Bean Toast
+        description: Thick sourdough toast, generous smear of refried beans, fried egg on top, hot sauce.
+      - name: Bean Grilled Cheese
+        description: Refried beans + cheese between buttered bread, grilled until golden. Decadent.
+      - name: Pupusas
+        description: Thick corn tortilla stuffed with refried beans + cheese. Salvadoran classic.
+swedishSubs:
+  - "Oaxaca / melting cheese → Gräddost. The closest all-rounder — mild, creamy, melts beautifully. Available at every ICA, Coop, and Willys."
+  - "Monterey Jack → Svecia. Semi-hard, mild with a slight nuttiness, very good melting. Widely available."
+  - "Queso Chihuahua / Cheddar → Mild Herrgårdsost. Sweden's workhorse cheese, similar to mild cheddar. Real cheddar is also stocked at larger stores."
+  - "Queso Fresco / Cotija → Feta or crumbled Hälloumi. Doesn't melt — use crumbled on top after cooking for that salty, tangy contrast."
+  - "Blend recommendation: 50% Gräddost + 30% Gouda + 20% mild Herrgårdsost. Creamy melt from gräddost, silkiness from gouda, tangy depth from herrgårdsost. Closest thing to restaurant-quality Mexican cheese in Sweden."
 ---
 
 A fusion refried bean recipe born from a craving and a well-stocked

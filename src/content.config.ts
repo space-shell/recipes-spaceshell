@@ -25,6 +25,20 @@ const recipes = defineCollection({
       }),
     ),
     notes: z.array(z.string()).optional(),
+    mealIdeas: z
+      .array(
+        z.object({
+          category: z.string(), // "Breakfast", "Lunch", "Dinner", etc.
+          meals: z.array(
+            z.object({
+              name: z.string(),
+              description: z.string(),
+            }),
+          ),
+        }),
+      )
+      .optional(),
+    swedishSubs: z.array(z.string()).optional(),
   }),
 });
 

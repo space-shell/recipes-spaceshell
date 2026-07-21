@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import IngredientList from "../components/IngredientList.astro";
+import MealIdeas from "../components/MealIdeas.astro";
+import SwedishSubs from "../components/SwedishSubs.astro";
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
@@ -112,6 +114,25 @@ const dateLabel = data.date.toLocaleDateString("en-GB", {
                 ))}
               </ul>
             </section>
+          )
+        }
+
+        {
+          data.mealIdeas && data.mealIdeas.length > 0 && (
+            <div class="mt-block">
+              <h2 class="font-serif text-3xl mb-6 tracking-tight">Meal Ideas</h2>
+              <div class="border-2 border-ink">
+                <MealIdeas categories={data.mealIdeas} />
+              </div>
+            </div>
+          )
+        }
+
+        {
+          data.swedishSubs && data.swedishSubs.length > 0 && (
+            <div class="mt-block">
+              <SwedishSubs subs={data.swedishSubs} />
+            </div>
           )
         }
       </div>
