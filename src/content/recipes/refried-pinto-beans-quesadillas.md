@@ -16,7 +16,7 @@ ingredients:
   - group: Pressure Cook
     items:
       - 2 cups dried pinto beans
-      - 4 cups water
+      - 6 cups water
       - 1 tbsp MSG + veg seasoning
       - 3 cloves garlic, chopped
       - ½ tbsp garam masala
