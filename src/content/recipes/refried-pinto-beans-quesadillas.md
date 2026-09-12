@@ -33,7 +33,7 @@ ingredients:
       - Tortillas
       - Gräddost
 notes:
-  - Drain the beans almost completely before refrying — you want a thick, scoopable bean that holds its shape in the quesadilla.
+  - Drain the beans before refrying, but keep the cooking liquid — add it back a splash at a time while mashing until you hit the consistency you prefer.
   - The garam masala + sesame oil gives the beans a warm, almost Indian depth that's totally unique. Don't skip it.
   - Swedish cheese substitute for Oaxaca — gräddost is the secret weapon. A blend of 50% gräddost + 30% Gouda + 20% mild herrgårdsost is even closer to restaurant quality.
   - Vacuum-seal portions (chamber vacuum, cooled) and freeze for 12–18 months. Flatten the bags into ~1-inch layers for fast thawing.
@@ -101,7 +101,7 @@ swedishSubs:
 A fusion refried bean recipe born from a craving and a well-stocked
 spice drawer. Dried pinto beans go into the Instant Pot with an
 unorthodox-but-killer blend of **garam masala and sesame oil**, then get
-drained almost dry and refried in butter with paprika and a second hit
+drained and refried in butter with paprika and a second hit
 of chili. Folded into a tortilla with melty **gräddost**, it's the kind
 of thing you'll make on repeat.
 
@@ -115,16 +115,18 @@ then quick-release any remaining pressure.
 
 ### 2. Drain
 
-Drain the beans — but not all the way. You want them almost completely
-dry so the final refry yields a thick, structured bean that won't sog
-out the tortilla.
+Drain the beans and reserve the cooking liquid. You want them well
+drained so the final refry yields a thick, structured bean — the extra
+water from the pressure cooker is there so you can add liquid back to
+taste while mashing.
 
 ### 3. Refry
 
 Set the pot to sauté. Add the butter, paprika, MSG + veg seasoning, and
 chili flakes in oil. Tip the beans back in and **mash** with a potato
-masher or the back of a spoon, frying and stirring until you hit the
-consistency you want. Taste and adjust.
+masher or the back of a spoon, frying and stirring. Add splashes of the
+reserved cooking liquid as you go until you hit the consistency you
+want. Taste and adjust.
 
 ### 4. Quesadilla
 
