@@ -87,7 +87,7 @@ git push -u origin main
 
 # Cloudflare Pages
 bunx wrangler pages project create recipes-spaceshell --production-branch main
-bunx wrangler pages deploy dist --branch main
+bunx wrangler pages deploy dist --project-name recipes-spaceshell --branch main
 ```
 
 Custom domain (`recipes.spaceshell.xyz`) and DNS CNAME are attached to the
@@ -97,7 +97,7 @@ Pages project; `spaceshell.xyz` is a Cloudflare-managed zone.
 
 ```sh
 npm run build
-bunx wrangler pages deploy dist --branch main --commit-message "..."
+bunx wrangler pages deploy dist --project-name recipes-spaceshell --branch main --commit-message "..."
 ```
 
 Git push and Pages deploy are intentionally separate — push to GitHub to
